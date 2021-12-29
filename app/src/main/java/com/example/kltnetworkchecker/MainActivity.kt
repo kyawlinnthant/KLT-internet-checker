@@ -27,6 +27,7 @@ class MainActivity : AppCompatActivity(R.layout.activity_main) {
                 when (it) {
                     MyState.Fetched -> showMessage(true)
                     MyState.Error -> showMessage(false)
+                    MyState.Nothing -> Unit
                 }
             }
         }
